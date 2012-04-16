@@ -71,11 +71,160 @@ td { vertical-align: top; }
 
 
 /* ===== Primary Styles ========================================================
-   Author:
+   Author: Francis Cortez
    ========================================================================== */
+body {
+    font-family: Helvetica;
+    font-size: 1em;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-and-nav {
+    height: 100%;
+    width: 360px;
+    margin-left: 0;
+    float:left;
+    position: fixed;
+
+    /* Gradient */
+    background: #feffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #feffff 0%, #f7f7f7 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#feffff), color-stop(100%,#f7f7f7)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #feffff 0%,#f7f7f7 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #feffff 0%,#f7f7f7 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #feffff 0%,#f7f7f7 100%); /* IE10+ */
+    background: linear-gradient(top,  #feffff 0%,#f7f7f7 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#f7f7f7',GradientType=0 ); /* IE6-9 */
+   
+}
+
+.header-and-nav h1 {
+    font-family: 'Cabin';
+    font-size: 2.8em;
+    letter-spacing: -1px;
+    margin: 0;
+    position: relative;
+}
+
+.header-and-nav nav {
+    width: 100%;
+    position: relative;
+}
+
+.hn-container {
+    position: relative;
+    z-index: 999;
+    width: 240px;
+    padding: 10px 90px 20px 30px;
+    background-color: rgba(255, 255, 255, .9);
+    border: 1px solid #fff;
+    margin: 0;
+    margin-left: -1px;
+    display: table;
+
+    border-radius: 0 0 15px 12px;
+    box-shadow: 0 0 60px #ddd;
+}
+
+nav {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+nav ul {
+    width: 100%;
+}
+
+nav ul li {
+    float: left;
+    width: 15px;
+    height: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+
+    color: #ddd;
+    background-color: #ddd;
+    overflow: hidden;
+    
+
+    border-radius: 7px;
+}
+
+nav ul li:hover {
+    background-color: rgba(230, 0, 0, 1);
+}
+
+nav ul li.active {
+    width: 20px;
+    height: 20px;
+    margin-top: 7px;
+    margin-right: 10px;
+
+    color: rgba(0, 255, 225, 1);
+    background-color: rgba(0, 255, 225, 1);
+
+    border-radius: 10px;
+}
+
+h2 {
+    margin: 0;
+    margin-bottom: .5em;
+}
+
+.content {
+    position: relative;
+    z-index: 500;
+    margin-top: 120px;
+    padding: 30px;
+    width: 880px;
+    float: left;
+}
+
+.content h2 {
+    border-top: 20px solid #eee;
+    padding-top: 20px;
+}
 
 
+.content .wrapper:nth-child(2n + 2) {
+    width: 462px;
+    float: left;
+    margin-left: 100px;
+    margin-bottom: 70px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
 
+.content .wrapper:nth-child(2n + 2) img {
+    width: 460px;
+    padding: 10px;
+    margin-bottom: 40px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+
+.content .wrapper:nth-child(2n + 1) {
+    width: 306px;
+    float: left;
+    font-size: .9em;
+    line-height: 1.5em;
+
+    border-radius: 7px;
+}
+
+.wrapper:nth-child(2n + 2) img.no-shadow {
+    box-shadow: none;
+    border: 0;
+}
 
 
 
