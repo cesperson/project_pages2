@@ -126,7 +126,7 @@ body {
     background-color: rgba(255, 255, 255, .9);
     border: 1px solid #fff;
     margin: 0;
-    margin-left: -1px;
+    margin-left: 0;
     display: table;
 
     border-radius: 0 0 15px 12px;
@@ -136,11 +136,11 @@ body {
 nav {
     position: relative;
     display: block;
-    width: 100%;
 }
 
 nav ul {
     width: 100%;
+    width: 240px;
 }
 
 nav ul li {
@@ -177,20 +177,22 @@ nav ul li.active {
 h2 {
     margin: 0;
     margin-bottom: .5em;
+    line-height: 1.3em;
 }
 
 .content {
     position: relative;
     z-index: 500;
-    margin-top: 120px;
+    margin-top: 150px;
     padding: 30px;
     width: 880px;
     float: left;
 }
 
 .content h2 {
-    border-top: 20px solid #eee;
+    /*border-top: 20px solid #eee;
     padding-top: 20px;
+    */
 }
 
 
@@ -209,7 +211,7 @@ h2 {
     margin-bottom: 40px;
     border: 1px solid #ddd;
     background-color: #fff;
-    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+    box-shadow: 0 3px 15px rgba(0,0,0,.15);
 }
 
 .content .wrapper:nth-child(2n + 1) {
@@ -219,11 +221,62 @@ h2 {
     line-height: 1.5em;
 
     border-radius: 7px;
+    clear: left;
 }
 
 .wrapper:nth-child(2n + 2) img.no-shadow {
     box-shadow: none;
     border: 0;
+}
+
+
+/* ROCKETMAN */
+
+
+#drawBox {
+    width: 480px;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+#rocketman {
+	width: 83px;
+	height: 47px;
+	background-color: #aaa;
+	position: relative;
+	top: 100px;
+	left: 35%;
+	float: left;
+	z-index: 999;
+    -webkit-transform: rotate(-5deg);
+    background: url(http://franciscortez.com/misc/rocketman/img/rocketman.png);
+}
+
+
+.layer {
+    position: absolute;
+    height: 300px;
+    width: 480px;
+    z-index: 0;
+    display:block;
+}
+
+
+#back {
+    background: #e3cbaa; /* url(../img/bg-light-dark.png); */
+    /*background: url(../img/bg-tiled.png);*/
+    background: url(http://franciscortez.com/misc/rocketman/img/bg-paper.png);
+}
+
+#middle {
+    /*background: transparent url(http://fimg/bg-obstacles.png);*/
+    background: transparent url(http://franciscortez.com/misc/rocketman/img/bg-paper-obstacles.png);
+    z-index: 1000;
+}
+
+#front {
+    background: transparent url(http://franciscortez.com/misc/rocketman/img/bg-top-bottom-bars.png);
+    z-index: 1000;
 }
 
 
